@@ -1,0 +1,13 @@
+{
+    "name": "qh4-module/upload",
+    "description": "文件上传模块",
+    "authors": [
+        {
+            "name": "hyunsu",
+            "email": "hyunsu@foxmail.com"
+        }
+    ],
+    "require": {},
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
