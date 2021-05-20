@@ -44,6 +44,7 @@ abstract class ExtAliyunOSS extends External
 
     /**
      * @return string 外网访问的Bucket域名
+     * 类似于 'test.oss-cn-qingdao.aliyuncs.com' 不带https,前面带有bucket的名字
      */
     abstract public function bucketHost();
 
@@ -51,6 +52,12 @@ abstract class ExtAliyunOSS extends External
      * @return string Bucket的名称
      */
     abstract public function bucketName();
+
+    /**
+     * @return string endPoint
+     * 类似于 "https://oss-cn-qingdao.aliyuncs.com" 样子,是一个url
+     */
+    abstract public function endPoint();
 
     /**
      * 表示用户上传的数据，必须是以返回的目录开始，不然上传会失败
