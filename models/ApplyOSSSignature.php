@@ -57,6 +57,7 @@ class ApplyOSSSignature extends ServiceModel
         $response['policy'] = $base64_policy;
         $response['signature'] = $signature;
         $response['expire'] = $expiration;
+        $response['expire_stamp'] = $end;
         $response['dir'] = $dir;  // 这个参数是设置用户上传文件时指定的前缀。
         return $response;
     }
